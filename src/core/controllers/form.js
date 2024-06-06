@@ -1,6 +1,6 @@
 // routes/formData.js
 const express = require("express");
-const FormData = require("../models/form.js");
+const FormData = require("../models/form");
 const router = express.Router();
 
 // POST request to submit form data
@@ -18,6 +18,7 @@ router.post("/", async (req, res) => {
 
 // GET request to fetch all form data
 router.get("/", async (req, res) => {
+  console.log("GET request");
   try {
     const formData = await FormData.find();
     res.status(200).send(formData);
