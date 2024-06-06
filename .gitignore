@@ -1,0 +1,26 @@
+# Dependency directories
+/node_modules
+
+# Distribution directories
+/dist
+/build
+
+# Environment variables file
+.env
+
+# Log files
+*.log
+
+# Editor directories and files
+.vscode/
+.idea/
+*.iml
+
+# Mac OS files
+.DS_Store
+
+# npm lock file
+package-lock.json
+
+# Yarn lock file
+yarn.lock
