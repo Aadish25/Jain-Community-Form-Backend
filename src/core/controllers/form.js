@@ -8,9 +8,8 @@ router.post("/", async (req, res) => {
     // console.log(req.body);
   try {
     const formData = new FormData(req.body);
-    console.log(formData);
     await formData.save();
-    res.status(201).send(formData);
+    res.status(201).send("Data submitted successfully");
   } catch (error) {
     res.status(400).send(error);
   }
