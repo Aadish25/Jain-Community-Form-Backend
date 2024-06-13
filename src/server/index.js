@@ -12,6 +12,7 @@ const allowedOrigins = [
   "http://localhost:5173",
   "https://jain-community-form-2.vercel.app",
   "https://jain-community-form.vercel.app",
+  "https://jain-community-form-2.vercel.app/",
 ];
 
 app.use(
