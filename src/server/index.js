@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 // Define the allowed origins
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173","https://jain-community-form-2.vercel.app","https://jain-community-form.vercel.app"];
 
 app.use(cors({ origin: allowedOrigins }));
 app.use("/form", form);
